@@ -1,0 +1,33 @@
+head, body {
+    width: 0;
+    padding: 0;
+}
+
+.first-container {
+    width: 1440px;
+    height: 35px;
+    background-color: #CC3333;
+}
+
+.first-container img {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 113px;
+    top: 7px;
+    border-radius: 0px;
+}
+
+.first-container p {
+    color: white;
+    position: absolute;
+    height: 14px;
+    width: 102px;
+    left: 147px;
+    top: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
