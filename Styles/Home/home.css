@@ -15,7 +15,7 @@ body {
     background-color: var(--cor-de-fundo);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: block;
-    
+    overflow-x: hidden;
 }
 
 /* HEADER*/
@@ -139,16 +139,18 @@ header {
     transition: .75s;
 }
 
+/* MAIN */
+
 .container-carrossel {
     width: 100%;
     height: 345px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid var(--cor-primaria);
 }
 
 .container-itens {
-    border: 2px solid black;
     width: 1116px;
     height: 345px;
 }
@@ -165,8 +167,116 @@ header {
 }
 
 .text-food-attention {
-    border: 2px solid black;
     width: 422px;
     height: 150px;
     margin-left: 160px;
+}
+
+.text-food-attention p {
+    color: var(--cor-primaria);
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 30px;
+}
+
+.text-food-attention h2 {
+    color: var(--cor-secundaria);
+    margin-top: 10px;
+    font-size: 25px;    
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;
+}
+
+.chicken-image {
+    position: relative;
+    width: 422px;
+    height: 220px;
+    margin-left: 650px;
+    bottom: 170px;
+    background-image: url(/images/frango.svg);
+    background-position: center;
+    
+}
+
+.order-action {
+    position: relative;
+    width: 300px;
+    height: 30px;
+    bottom: 200px;
+    left: 200px;
+    align-items: center;
+
+}
+
+.order-action a {
+    width: 200px;
+    height: 60px;
+    margin-left: 90px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--cor-de-fundo);
+    border: 2px solid var(--cor-primaria);
+    border-radius: 5px;
+    background-color: var(--cor-primaria);
+    align-items: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.food-images {
+    width: 100%;
+    height: 200px;
+}
+
+.title-food {
+    text-align: center;
+    color: var(--cor-secundaria);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.title-food h2 {
+    color: var(--cor-primaria);
+    margin-bottom: 20px;
+}
+
+.list-food {
+    height: 120px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.list-food li {
+    width: 230px;
+    height: 110px;
+    list-style: none;
+}
+
+.food:nth-child(1) {
+    background-image: url(/images/carnes.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.food:nth-child(2) {
+    background-image: url(/images/espetinho.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.food:nth-child(3) {
+    background-image: url(/images/hamburguer.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.food:nth-child(4) {
+    background-image: url(/images/saladona.svg);
+    background-position: center;
+    background-size: cover; 
 }
